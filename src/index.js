@@ -1,39 +1,48 @@
-import Phaser from 'phaser'
-import CharacterSelectScene from './scenes/CharacterSelectScene';
-import MainMenuScene from './scenes/MainMenuScene';
-import MapSelectScene from './scenes/MapSelectScene';
-import PauseScene from './scenes/PauseScene';
-import PlayScene from './scenes/PlayScene';
-import PreloadScene from './scenes/PreloadScene';
-import ResultsScene from './scenes/ResultsScene';
-import ResumeScene from './scenes/ResumeScene';
+import Phaser from "phaser";
+import CharacterSelectScene from "./scenes/CharacterSelectScene";
+import MainMenuScene from "./scenes/MainMenuScene";
+import MapSelectScene from "./scenes/MapSelectScene";
+import PlayScene from "./scenes/PlayScene";
+import PreloadScene from "./scenes/PreloadScene";
+import ResultsScene from "./scenes/ResultsScene";
+import EndScene from "./scenes/EndScene";
+import InstructionsScene from "./scenes/InstructionsScene";
 
-const WIDTH = 1050;
-const HEIGHT = 750; 
+const WIDTH = 1024;
+const HEIGHT = 576;
 
-const SHARED_CONFIG ={
+const SHARED_CONFIG = {
   width: WIDTH,
-  height: HEIGHT
-}
+  height: HEIGHT,
+};
+const Scenes = [
+  PreloadScene,
+  MainMenuScene,
+  CharacterSelectScene,
+  MapSelectScene,
+  PlayScene,
+  ResultsScene,
+  EndScene,
+  InstructionsScene,
+];
 
-// const Scenes= [PreloadScene,MainMenuScene,CharacterSelectScene,MapSelectScene,PlayScene,PauseScene,ResumeScene,ResultsScene]
-const Scenes = [PreloadScene, PlayScene];
-const createScene = (Scene) => new Scene(SHARED_CONFIG)  
+const createScene = (Scene) => new Scene(SHARED_CONFIG);
 
-const initScenes = () => Scenes.map(createScene)
+const initScenes = () => Scenes.map(createScene);
 
 const config = {
   type: Phaser.AUTO,
   ...SHARED_CONFIG,
-  backgroundColor:'#ADD8E6',
+  autoCenter: true,
+  backgroundColor: "#ADD8E6",
   physics: {
-    default: 'arcade',
+    default: "arcade",
     arcade: {
-      gravity: {y: 900},
-      debug: true
+      debug: false,
+      gravity: { y: 2100 },
     },
   },
-  scene: initScenes()
+  scene: initScenes(),
 };
 
 new Phaser.Game(config);

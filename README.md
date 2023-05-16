@@ -1,19 +1,33 @@
+# Sesame Street Fighter
 
-```terminal
-# clone repo
-git clone git@github.com:quangcito/sesame-street-fighter.git
+<img alt="game-walk-through" src="https://user-images.githubusercontent.com/90817567/236643647-43840d81-2d4e-49b4-b410-781a5c581f1e.gif">
 
-# change current directory to just cloned repo
-cd sesame-street-fighter
 
-# use the correct `node` version (run installation the correct version as prompted if needed)
-nvm use
+## Description
+This is the source code for Sesame Street Fighter 2-player game that combine Sesame Street and Street Fighter.
 
-# install node packages
-npm i
+## Tech Stack
+- PhaserJS
+- Photoshop
+- Tiled
+- HTML/JS
+- Babel & Webpack
+- npm & nvm
 
-# start code
-npm start
+# Local development
 
-# visit localhost:8080 on browser
-```
+- Install node / npm
+- [Install nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- In the project directory:
+    ```terminal
+    # use the correct `node` version
+    nvm use
+
+    # install node packages
+    npm i
+
+    # start code
+    npm start
+
+    # visit localhost:8080 on browser
+    ```
