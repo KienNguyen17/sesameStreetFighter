@@ -15,7 +15,6 @@ const SHARED_CONFIG = {
   width: WIDTH,
   height: HEIGHT,
 };
-
 const Scenes = [
   PreloadScene,
   MainMenuScene,

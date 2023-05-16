@@ -1,3 +1,4 @@
+
 import Phaser from "phaser";
 import HandleInputs from "../mixin/HandleInputs";
 import Player from "../character/Player";

@@ -1,3 +1,4 @@
+
 import Phaser from "phaser";
 
 class PreloadScene extends Phaser.Scene {
@@ -140,5 +141,6 @@ class PreloadScene extends Phaser.Scene {
   update() {
     this.scene.start("MainMenuScene", { music: this.soundtrack });
   }
+
 }
 export default PreloadScene;
