@@ -1,5 +1,7 @@
 # Sesame Street Fighter
 
+Author: Kien Nguyen, Quang Nguyen, Andrew Nguyen, Jack Keller
+
 <img alt="game-walk-through" src="https://user-images.githubusercontent.com/90817567/236643647-43840d81-2d4e-49b4-b410-781a5c581f1e.gif">
 
 
